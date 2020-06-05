@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Common Style */
+
+body{
+    background-color: #212121;
+    color: #ff6f00;
+}
+
+.main-wrapper{
+    background-color: #212121;
+}
+
+.navbar{
+    background-color: #212121 !important;
+    border-bottom: 1px solid #ff6f00;
+}
+
+.navbar-toggler{
+    background-color:#ff6f00 !important;
+}
+
+.nav-link{
+    color: #ffffff !important;
+    font-weight: bold;
+    padding: 5px !important;
+}
+
+.nav-link:hover{
+    background-color: #ff6f00;
+    color: #212121 !important;
+    border-radius: 10px;
+}
+
+.nav-item{
+    margin-left: 10px;
+}
+
+.active>a{
+    color: #ff6f00 !important;
+}
+
+.fa-facebook,.fa-instagram,.fa-whatsapp{
+    color:#ff6f00;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.logo{
+    width: 150px;
+}
+
+
+.footer{
+    text-align: center ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid #ff6f00;
+}
+
+/* Home Page */
+.section{
+    color:#ff6f00;  
+}
+
+.section-img{
+    width: 100%;
+    border: 2px solid #ff6f00;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section-text{
+    padding-top: 350px;
+    text-align: left;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color:#ffffff;
+}
+
+.section-author{
+    font-family: 'Dancing Script',cursive;
+    color:#ffffff;
+}
+
+
+
+@media screen and (max-width: 990px) {
+    .section-text{
+        padding-top: 50%;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .section-text{
+        padding-top: 15%;
+    }
+    .section-img{
+        margin-bottom: 0px;
+    }
+    
+    .card{
+        margin: 0 auto;
+    }
+  }
+
+  
+@media screen and (max-width: 568px) {
+    .section-text{
+        padding-top: 15%;
+    }
+    .section-img{
+        margin-bottom: 0px;
+    }
+  }
+
+.packages{
+    width: 100%;
+    background-color: #ffa040;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.packages-title{
+   padding-top: 30px;
+   font-family: 'Dancing Script',cursive;
+   font-size: 3em;
+   font-weight: bold;
+   color:#212121;
+}
+
+.card{
+    margin-top: 20px;
+    background-color: #212121 !important;
+    border-radius: 5px;
+    
+}
+
+.card-img-top{
+    border-bottom: 2px solid #ff6f00;
+}
+
+.my-2{
+    background-color:#ff6f00 !important;
+}
+
+.none-item{
+    visibility: hidden;
+}
+
+/* About */
+
+.about{
+    width: 100%;
+    background-color: #ffa040;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.about h3{
+    color: #212121;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-text{
+    text-align: justify;
+    color: #212121;
+    line-height: 2em;
+    width: 80%;
+}
+
+/* Gallery */
+
+
+.gallery{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gallery h3{
+    color: #ff6f00;
+    font-weight: bold;
+    font-family:  'Dancing Script',cursive;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.gallery-carousel{
+    position: relative !important;
+}
+
+#carousel-thumbs {
+    background: rgba(255,255,255,.3);
+    bottom: 0;
+    left: 0;
+    padding: 0 50px;
+    right: 0;
+  }
+  #carousel-thumbs img {
+    border: 5px solid transparent;
+    cursor: pointer;
+  }
+  #carousel-thumbs img:hover {
+    border-color: rgba(255,255,255,.3);
+  }
+  #carousel-thumbs .selected img {
+    border-color: #ff6f00;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+  }
+  @media all and (max-width: 767px) {
+    .carousel-container #carousel-thumbs img {
+      border-width: 3px;
+    }
+  }
+  @media all and (min-width: 576px) {
+    .carousel-container #carousel-thumbs {
+      position: absolute;
+    }
+  }
+  @media all and (max-width: 576px) {
+    .carousel-container #carousel-thumbs {
+      background: #ccccce;
+    }
+  }
+
+  /* Contact */
+.contact-cover{
+    position: relative;
+}
+
+  .contact-cover img{
+      width: 100%;
+      height: 550px;
+  }
+
+  .text-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+  .text-block h1{
+      font-size: 3.3em;
+      
+  }
+  
+  .contact{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .info{
+      padding-top: 50px;
+  }
+
+  .indent-text{
+      margin-left: 25px;
+  }
+
+  .fa-map-marker,.fa-mobile,.fa-thumbs-o-up{
+      padding-right:5px;
+      font-size: 20px;
+  }
